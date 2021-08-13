@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  smartbidsdb:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: smartbidsDB
+      MYSQL_USER: smartbids
+      MYSQL_PASSWORD: smartbids
